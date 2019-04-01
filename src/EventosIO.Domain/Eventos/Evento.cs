@@ -219,8 +219,8 @@ namespace EventosIO.Domain.Eventos
                     CategoriaID = categoriaID
                 };
 
-                if (organizadorId != null)
-                    evento.Organizador = new Organizador(organizadorId.Value);
+                if (organizadorId.HasValue)
+                    evento.OrganizadorID = organizadorId.Value;
 
                 if (online)
                     evento.Endereco = null;
