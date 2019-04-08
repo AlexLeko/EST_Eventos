@@ -35,6 +35,10 @@ namespace EventosIO.Domain.Eventos.Commands
         #region [ Registrar Evento ]
         public void Handle(RegistrarEventoCommand message)
         {
+            var endereco = new Endereco(message.Endereco.Id, message.Endereco.Logradouro, message.Endereco.Numero,
+                message.Endereco.Complemento, message.Endereco.Bairro, message.Endereco.CEP, message.Endereco.Cidade, 
+                message.Endereco.Estado, message.Endereco.EventoID.Value);
+
             var evento = Evento.EventoFactory.NovoEventoCompleto(
                 message.Id,
                 message.Nome,
@@ -47,8 +51,8 @@ namespace EventosIO.Domain.Eventos.Commands
                 message.Online,
                 message.NomeEmpresa,
                 message.OrganizadorID,
-                message.Endereco,
-                message.Categoria.Id
+                endereco,
+                message.CategoriaId
             );
 
             if (!EventoValido(evento)) return;
@@ -100,7 +104,7 @@ namespace EventosIO.Domain.Eventos.Commands
                 message.NomeEmpresa,
                 message.OrganizadorID,
                 eventoAtual.Endereco,
-                message.Categoria.Id
+                message.CategoriaId
                 
             );
 

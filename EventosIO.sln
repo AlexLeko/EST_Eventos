@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventosIO.Domain", "src\Eve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventosIO.Domain.Core", "src\EventosIO.Domain.Core\EventosIO.Domain.Core.csproj", "{875D8490-8ED2-4BC4-A0F8-9C55C6FE05E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventoIO.Infra.Data", "src\EventoIO.Infra.Data\EventoIO.Infra.Data.csproj", "{C3549438-71A3-4F6B-9118-36D4C2EB9C75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventoIO.Infra.Data", "src\EventoIO.Infra.Data\EventoIO.Infra.Data.csproj", "{C3549438-71A3-4F6B-9118-36D4C2EB9C75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventosIO.Site", "src\EventosIO.Site\EventosIO.Site.csproj", "{4CE2A19D-24AB-4C9E-8265-26A3027ABA53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventosIO.Site", "src\EventosIO.Site\EventosIO.Site.csproj", "{4CE2A19D-24AB-4C9E-8265-26A3027ABA53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventosIO.Application", "src\EventosIO.Application\EventosIO.Application.csproj", "{C1D853CA-F256-4D67-B48A-1EB6BAF5314A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{4CE2A19D-24AB-4C9E-8265-26A3027ABA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CE2A19D-24AB-4C9E-8265-26A3027ABA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CE2A19D-24AB-4C9E-8265-26A3027ABA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D853CA-F256-4D67-B48A-1EB6BAF5314A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D853CA-F256-4D67-B48A-1EB6BAF5314A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D853CA-F256-4D67-B48A-1EB6BAF5314A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D853CA-F256-4D67-B48A-1EB6BAF5314A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{875D8490-8ED2-4BC4-A0F8-9C55C6FE05E1} = {E86DBB5D-44E5-4CD2-B7DF-375067364B3A}
 		{C3549438-71A3-4F6B-9118-36D4C2EB9C75} = {C8573126-4DBD-416F-A2FC-ED76657898E9}
 		{4CE2A19D-24AB-4C9E-8265-26A3027ABA53} = {98DDEEC0-128F-4EA2-BB31-BB19A0721714}
+		{C1D853CA-F256-4D67-B48A-1EB6BAF5314A} = {72F8C8F8-2248-4E45-A530-70B7B26328DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CF3B1006-6D2E-4B1D-958B-5C05B36870D2}

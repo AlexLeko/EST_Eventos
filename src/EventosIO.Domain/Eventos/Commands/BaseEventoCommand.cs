@@ -27,9 +27,7 @@ namespace EventosIO.Domain.Eventos.Commands
 
         public Guid OrganizadorID { get; protected set; }
 
-        public Endereco Endereco { get; protected set; }
-
-        public Categoria Categoria { get; protected set; }
+        public Guid CategoriaId { get; protected set; }
 
     }
 }
